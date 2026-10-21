@@ -17,8 +17,8 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
       - name: Build the mod
         run: ./gradlew build
-      - name: Upload mod jar
+      - name: Upload mod zip
         uses: actions/upload-artifact@v4
         with:
-          name: Mod
+          name: the-backrooms-ci
           path: build/libs
